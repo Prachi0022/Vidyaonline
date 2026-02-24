@@ -15,7 +15,7 @@ const ExperienceSection = () => {
       description:
         "acknowledging Appinventiv's engineering excellence, growth, and enterprise delivery capability",
       color: 'from-gray-900 to-black',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=500&h=500&fit=crop',
+      image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900&h=900&fit=crop',
       alt: 'Global Recognitions and Awards',
     },
     {
@@ -25,7 +25,7 @@ const ExperienceSection = () => {
       description:
         'as an enterprise technology consulting and digital engineering services firm',
       color: 'from-gray-900 to-black',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop',
+      image: 'https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?w=900&h=900&fit=crop',
       alt: 'Years of Experience',
     },
     {
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
       description:
         'delivering innovative solutions across multiple industries and global markets',
       color: 'from-gray-900 to-black',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop',
+      image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=900&fit=crop',
       alt: 'Successful Projects',
     },
     {
@@ -45,7 +45,7 @@ const ExperienceSection = () => {
       description:
         'highly skilled professionals dedicated to transforming ideas into reality',
       color: 'from-gray-900 to-black',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop',
+      image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=900&fit=crop',
       alt: 'Team Experts',
     },
     {
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
       description:
         'committed to exceeding expectations and delivering measurable results',
       color: 'from-gray-900 to-black',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=900&fit=crop',
       alt: 'Client Satisfaction',
     },
   ];
@@ -109,7 +109,10 @@ const ExperienceSection = () => {
   }, [experienceCards.length]);
 
   return (
-    <section className="relative bg-transparent overflow-hidden flex items-center py-8 md:py-12 lg:py-16" style={{ minHeight: 'auto' }}>
+    <section className="relative  overflow-hidden h-[53vh] md:h-[70vh] pt-14 flex flex-col items-center gap-6 py-8 md:py-12 lg:py-16" style={{ minHeight: 'auto' }}>
+      <span className="inline-block absolute left-4 md:left-32 top-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-200 tracking-widest uppercase border border-blue-200 dark:border-amber-900">
+        Experience Highlights
+      </span>
       {/* Scrolling Container */}
       <div
         ref={scrollContainerRef}

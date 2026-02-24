@@ -30,6 +30,11 @@ const StepCard = ({ step, cardRef }) => {
 
       {/* Title and description below the card */}
       <div className="mt-8 space-y-3">
+        {step.badgeLabel && (
+          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+            {step.badgeLabel}
+          </span>
+        )}
         <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">
           {step.title}
         </h3>

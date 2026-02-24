@@ -57,7 +57,7 @@ const AIAgent = () => {
 
     }, []);
   return (
-    <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 md:pt-16 md:pb-16 w-[86%] sm:w-[95%] md:w-[90%] lg:w-[85%] xl:w-full mx-auto lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="pt-8 pb-8 sm:pt-12 mt-6 md:mt-0 sm:pb-12 md:pt-16 md:pb-16 w-[86%] sm:w-[95%] h-[60vh] md:h-[73vh]  md:w-[80%] lg:w-[72vw] mx-auto lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
       <RevealAnimation delay={0.1}>
         <div className="relative">
           <div ref={boxRef} className="bg-black dark:bg-background-8 relative -z-0 mx-4 sm:mx-5 max-w-[1290px] overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-4xl py-10 sm:py-16 md:py-20 lg:py-28 text-center lg:py-28 xl:mx-auto 2xl:max-w-[1440px]">
@@ -74,7 +74,7 @@ const AIAgent = () => {
           {/* Getting Started */}
 
           <RevealAnimation delay={0.3}>
-            <span className="badge badge-blur text-[6vw] sm:text-[5vw] md:text-[4vw] lg:text-[5vw] bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-5">How it works</span>
+            <span className="badge badge-blur text-3xl sm:text-[5vw] md:text-[4vw] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-5">How it works</span>
           </RevealAnimation>
 
           <RevealAnimation delay={0.4}>

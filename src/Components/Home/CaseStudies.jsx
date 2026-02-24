@@ -50,6 +50,7 @@ function CaseStudies() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isImageReady, setIsImageReady] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const loadedImagesRef = useRef(new Set());
   const imageContainerRef = useRef(null);
   const titlesContainerRef = useRef(null);
@@ -79,6 +80,19 @@ function CaseStudies() {
     });
   }, [activeIndex]);
 
+  // Track viewport to provide a simplified mobile layout
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const mq = window.matchMedia('(max-width: 767px)');
+    const handleChange = (event) => setIsMobile(event.matches);
+
+    setIsMobile(mq.matches);
+    mq.addEventListener('change', handleChange);
+
+    return () => mq.removeEventListener('change', handleChange);
+  }, []);
+
   // Create GSAP timeline once
   useEffect(() => {
     const tl = gsap.timeline({ paused: true });
@@ -98,9 +112,9 @@ function CaseStudies() {
       {
         xPercent: -50,
         yPercent: -50,
-        left: '49%',
-        top: '55%',
-        scale: 1.2,
+        left: '51%',
+        top: '44%',
+        scale: 0.7,
         duration: 0.6,
         ease: 'power3.inOut',
       },
@@ -189,11 +203,64 @@ function CaseStudies() {
     setIsExpanded(false);
   };
 
+  // Mobile-first static layout for better responsiveness
+  if (isMobile) {
+    return (
+      <RevealAnimation>
+        <section className="relative overflow-hidden">
+          <div className="main-container py-10 px-4 sm:px-6 space-y-6">
+            {caseStudiesData.map((study) => (
+              <div
+                key={study.id}
+                className="rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden bg-white/90 dark:bg-gray-900/80 shadow-[0_12px_30px_rgba(15,23,42,0.08)]"
+              >
+                <div className="relative h-48 sm:h-64">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30" />
+                </div>
+
+                <div className="p-4 sm:p-6 space-y-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white leading-tight">
+                      {study.title}
+                    </h3>
+                    <span className="hidden sm:inline-block uppercase text-[10px] tracking-[0.18em] text-gray-500">
+                      Case Study
+                    </span>
+                  </div>
+
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-4">
+                    {study.description}
+                  </p>
+
+                  <div className="pt-1">
+                    <LinkButton
+                      href={study.livePreviewUrl}
+                      className="bg-gray-900 text-white rounded-xl border border-gray-800 hover:bg-gray-800"
+                    >
+                      Live Preview
+                    </LinkButton>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </RevealAnimation>
+    );
+  }
+
   return (
     <RevealAnimation>
       <section className={`relative overflow-hidden transition-all duration-500 ease-in-out ${
         isExpanded 
-          ? 'h-[80vh] sm:h-[70vh] md:h-[100vh]' 
+          ? 'h-[80vh] sm:h-[70vh] md:h-[102vh]' 
           : 'h-[55vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]'
       }`}>
         <div className="main-container relative min-h-screen md:min-h-[120vh] lg:min-h-[130vh] py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-20 lg:py-20">
@@ -201,14 +268,14 @@ function CaseStudies() {
           {/* Image Section */}
           <div
             ref={imageContainerRef}
-            className="absolute w-[18rem] h-[11rem] sm:w-[22rem] sm:h-[14rem] md:w-[27rem] md:h-[17rem] lg:max-w-xl"
+            className="absolute w-[18rem] h-[11rem] sm:w-[22rem] sm:h-[14rem] md:w-[52rem] md:h-[17rem]"
             style={{ left: 0, top: 0 }}
           >
             <div className="relative overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.12)]">
               <img
                 src={activeStudy.image}
                 alt={activeStudy.title}
-                className={`h-[10rem] sm:h-[12rem] md:h-[14rem] w-full object-cover transition-opacity duration-500 ${
+                className={`h-[10rem] sm:h-[12rem] md:h-[28rem] w-full object-cover transition-opacity duration-500 ${
                   isImageReady ? 'opacity-100' : 'opacity-0'
                 }`}
                 loading="eager"
@@ -232,9 +299,10 @@ function CaseStudies() {
             style={{ right: 0, bottom: 0, textAlign: 'right' }}
           >
             {!isExpanded && (
-              <div className="flex items-center justify-end gap-2 sm:gap-3 md:gap-4 text-[10px] sm:text-xs md:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] text-gray-500">
-                <span>My Projects</span>
-                <span className="h-px w-12 sm:w-16 md:w-20 bg-gray-300"></span>
+              <div className="flex absolute -top-6 left-2 md:left-12 items-center justify-end gap-2 sm:gap-3 md:gap-4 text-[10px] sm:text-xs md:text-xs  tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] text-gray-500">
+<span className="inline-block uppercase px-3 w-32 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest  border border-blue-100 dark:border-blue-900">
+              My Projects
+            </span>                <span className="h-px w-12 sm:w-16 md:w-44 bg-gray-300"></span>
               </div>
             )}
 
@@ -249,7 +317,7 @@ function CaseStudies() {
                     onClick={() => handleTitleClick(index)}
                     onMouseEnter={() => !isExpanded && setActiveIndex(index)}
                     onFocus={() => !isExpanded && setActiveIndex(index)}
-                    className={`block w-full transition-colors duration-200 whitespace-nowrap text-lg sm:text-2xl md:text-3xl lg:text-5xl ${
+                    className={`block w-full cursor-pointer transition-colors duration-200 whitespace-nowrap text-lg sm:text-2xl md:text-3xl lg:text-5xl ${
                       isExpanded && isActive ? 'md:text-4xl lg:text-7xl font-bold' : 'font-light'
                     } ${
                       isActive

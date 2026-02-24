@@ -75,7 +75,7 @@ function Navbar() {
         <nav
           className={`w-[87%] sm:w-[50%] md:w-full fixed rounded-full text-white z-50 transition-all duration-700 ease-in-out ${
             scrolled
-              ? "lg:w-[44rem] bg-black/10 dark:bg-white/10 top-3 backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 before:absolute before:inset-0 before:rounded-2xl lg:before:rounded-3xl before:bg-gradient-to-br before:from-white/5 before:to-transparent"
+              ? "lg:w-[44rem] bg-black/10 dark:bg-white/10 top-3 backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 before:absolute before:inset-0 before:rounded-2xl lg:before:rounded-2xl before:bg-gradient-to-br before:from-white/5 before:to-transparent"
               : "lg:w-[52rem] top-6 bg-transparent"
           }  before:pointer-events-none`}
         >
@@ -125,7 +125,7 @@ function Navbar() {
                   >
                     Services
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="w-[min(100vw,72rem)] min-w-[22rem] sm:min-w-[40rem] lg:min-w-[51rem] max-w-none right-96 backdrop-blur-2xl bg-white/95 text-gray-800 rounded-2xl border border-gray-200/50 shadow-2xl shadow-blue-500/5 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-br before:from-blue-50/50 before:to-transparent before:pointer-events-none">
+                  <NavigationMenuContent className="w-[min(100vw,72rem)] min-w-[22rem] sm:min-w-[40rem] lg:min-w-[51rem] max-w-none right-96 backdrop-blur-2xl bg-white/95 text-gray-800 dark:text-gray-50 rounded-md border border-gray-200/50 shadow-2xl shadow-blue-500/5 before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-br before:from-blue-50/50 before:to-transparent before:dark:text-gray-50 before:pointer-events-none">
                     <div className="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:p-8 mx-auto relative z-10">
                       {servicesData.map((section, idx) => (
                         <div key={idx} className="group">
@@ -134,7 +134,7 @@ function Navbar() {
 
                             {section.category}
                           </h3>
-                          <ul className="space-y-3 text-sm text-gray-600">
+                          <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-50">
                             {section.items.map((item, itemIdx) => (
                               <li
                                 key={itemIdx}
@@ -160,13 +160,13 @@ function Navbar() {
                   >
                     About Us
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="backdrop-blur-2xl bg-white/95 text-gray-800 rounded-2xl border border-gray-200/50 shadow-2xl shadow-blue-500/5 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-br before:from-blue-50/50 before:to-transparent before:pointer-events-none">
+                  <NavigationMenuContent className="backdrop-blur-2xl bg-white/95 text-gray-800 dark:text-gray-50 rounded-md border border-gray-200/50 shadow-2xl shadow-blue-500/5 before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-br before:from-blue-50/50 before:to-transparent before:dark:text-gray-50 before:pointer-events-none">
                     <div className="p-6 min-w-64 relative z-10">
                       <h3 className="font-bold text-black mb-4 flex items-center">
                         <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-2 shadow-lg shadow-blue-500/50"></span>
                         ABOUT US
                       </h3>
-                      <ul className="space-y-3 text-sm text-gray-600">
+                      <ul className="space-y-3 text-sm text-gray-50">
                         <li className="hover:text-black hover:translate-x-1 cursor-pointer font-medium transition-all duration-300">
                           How we work
                         </li>

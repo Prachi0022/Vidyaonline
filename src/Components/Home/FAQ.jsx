@@ -66,10 +66,11 @@ function FAQ() {
         {/* Header */}
         <RevealAnimation delay={0.1}>
           <div className="px-4 sm:px-6 md:px-8 lg:mx-18 text-start space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
-              FAQ
-            </h2>
-            <p className="mx-0 max-w-full sm:max-w-[600px] text-sm sm:text-base md:text-lg text-gray-400">
+            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50/10 text-xs font-semibold text-blue-100 tracking-widest uppercase border border-blue-300/30">
+              Frequently Asked Questions
+            </span>
+            
+            <p className=" text-sm sm:text-base md:text-6xl w-[68vw]  text-white font-bold tracking-tight leading-[0.9] px-2 sm:px-0">
               Find answers to common questions about our AI and technology solutions.
             </p>
           </div>

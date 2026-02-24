@@ -8,38 +8,38 @@ const stepsData = [
   {
     id: 'step-1',
     stepNumber: 1,
-    title: 'Write or paste script',
+    title: 'Strategic Technology Consulting',
     description:
-      "Quickly draft your message or drop in your ready-to-go text to get started instantly. Whether you're crafting a new idea, refining existing",
-    mainImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop',
-    overlayImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop',
-    overlayImagePosition: 'right',
+      'From architecture audits to digital transformation strategy, we help leaders align technology with business goals for measurable ROI.',
+    badgeLabel: 'Consulting',
+    mainImage: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=600&fit=crop',
   },
   {
     id: 'step-2',
     stepNumber: 2,
-    title: 'Choose your voice style',
+    title: 'Digital Product Development & Engineering',
     description:
-      'Select from natural human-like voices, accents, and tones that fit your content. Browse through our extensive library of professional voices, each designed to match',
-    mainImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop',
+      'We handle the full lifecycle of software development—from cloud-native applications to complex ERP systems.',
+    badgeLabel: 'Product Engineering',
+    mainImage: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=600&fit=crop',
   },
   {
     id: 'step-3',
     stepNumber: 3,
-    title: 'Customize the delivery',
+    title: 'AI, Data and Analytics Solutions',
     description:
-      'Adjust speed, pitch, pauses, and emotions for a perfect performance. Fine-tune every aspect of your voiceover to create the exact tone and pacing you need for your project.',
-    mainImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
+      'We integrate advanced AI to automate operations, predict trends, and personalize customer experiences at scale.',
+    badgeLabel: 'AI & Data',
+    mainImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop',
   },
   {
     id: 'step-4',
     stepNumber: 4,
-    title: 'Generate & download',
+    title: 'Cloud Operations and Cybersecurity',
     description:
-      "Get studio-quality audio in seconds and download instantly. Your professional voiceover is ready to use in any format, whether you're creating content for videos, podcasts, or presentations.",
-    mainImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop',
-    overlayImage: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=400&fit=crop',
-    overlayImagePosition: 'center',
+      'We engineer cloud-native environments rooted in Zero Trust principles so your infrastructure is scalable and secure.',
+    badgeLabel: 'Cloud & Security',
+    mainImage: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=600&fit=crop',
   },
 ];
 
@@ -105,12 +105,19 @@ const Steps = () => {
   };
 
   return (
-    <section className="py-[80px] md:py-[120px] lg:py-[156px] bg-white dark:bg-black">
+    <section
+      id="steps-section"
+      className="relative z-10 py-[80px] md:py-[120px] lg:py-[156px] bg-white dark:bg-black"
+    >
       <div className="main-container">
         <div className="flex flex-wrap items-start justify-center gap-y-[58px] lg:flex-nowrap lg:gap-x-[58px] lg:gap-y-0">
           {/* heading  */}
           <RevealAnimation delay={0.1}>
-            <h2 className="lg:top-[156px] max-w-2xl text-center text-4xl font-semibold md:text-5xl lg:text-6xl leading-tight lg:sticky lg:text-left text-gray-900 dark:text-white">
+            
+            <h2 className="lg:top-[156px] max-w-2xl text-center text-4xl leading-14 font-semibold md:text-5xl lg:text-6xl  lg:sticky lg:text-left text-gray-900 dark:text-white">
+             <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+                Our Services
+              </span> <br />
               Beyond Development We Deliver <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Transformation</span>
             </h2>
           </RevealAnimation>

@@ -149,15 +149,14 @@ function Expertise() {
             <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
               Technical Expertise
             </span>
-            <div className="space-y-2 sm:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight sm:leading-snug">
-                Deep Technical Expertise,
-                <br />
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
+            <div className="space-y-3 sm:space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
+                <span className="block">Deep Technical Expertise,</span>
+                <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
                   Supporting Modern Systems
                 </span>
               </h2>
-              <p className="mx-auto max-w-full sm:max-w-[700px] text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 px-2 sm:px-0">
+              <p className="mx-auto max-w-3xl text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 px-2 sm:px-0 mt-3 sm:mt-4">
                 We deliver enterprise-grade solutions across AI, cloud, security, and emerging technologies that drive measurable business outcomes.
               </p>
             </div>
