@@ -57,10 +57,10 @@ const AIAgent = () => {
 
     }, []);
   return (
-    <section className="pt-8 pb-8 sm:pt-12 mt-6 md:mt-0 sm:pb-12 md:pt-16 md:pb-16 w-[86%] sm:w-[95%] h-[60vh] lg:h-[73vh]  md:w-[80%] lg:w-[72vw] mx-auto lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="pt-8 relative pb-8 sm:pt-12 mt-6 md:mt-0 sm:pb-12 md:pt-16 md:pb-16 h-auto md:min-h-[65vh] lg:h-[73vh] w-[90%] sm:w-[95%] md:w-[88%] lg:w-[72vw] px-4 md:px-8 mx-auto lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
       <RevealAnimation delay={0.1}>
         <div className="relative">
-          <div ref={boxRef} className="bg-black dark:bg-background-8 relative -z-0 mx-4 sm:mx-5 max-w-[1290px] overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-4xl py-10 sm:py-16 md:py-20 lg:py-28 text-center lg:py-28 xl:mx-auto 2xl:max-w-[1440px]">
+          <div ref={boxRef} className="bg-black dark:bg-background-8 relative -z-0 mx-4 sm:mx-5 md:mx-8 max-w-[1290px] overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-4xl py-10 sm:py-16 md:py-20 lg:py-28 text-center lg:py-28 xl:mx-auto 2xl:max-w-[1440px]">
           {/* background image  */}
 
           <RevealAnimation delay={0.3} duration={2} useSpring={true} direction="right" offset={50}>
@@ -84,7 +84,7 @@ const AIAgent = () => {
           </RevealAnimation>
 
           {/* Content */}
-           <div className="mx-auto flex items-start justify-start gap-x-3 sm:gap-x-5 md:gap-x-7 lg:gap-x-8 gap-y-6 sm:gap-y-8 md:gap-y-10 max-[400px]:px-4 sm:px-5 max-xl:px-6 max-md:flex-wrap max-md:items-center max-md:justify-center md:items-center md:justify-center">
+           <div className="mx-auto flex items-start justify-start gap-x-3 sm:gap-x-5 md:gap-x-7 lg:gap-x-8 gap-y-6 sm:gap-y-8 md:gap-y-10 px-2 sm:px-5 md:px-8 max-md:flex-wrap max-md:items-center max-md:justify-center md:items-center md:justify-center">
             {howItWorksData.map((step) => (
                  <RevealAnimation key={step.id} duration={0.5} delay={Number(step.delay)}>
                    <div data-card className="text-left">

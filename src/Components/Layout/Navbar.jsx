@@ -73,7 +73,7 @@ function Navbar() {
     <div className="w-full flex items-center justify-center px-2 sm:px-4">
       <RevealAnimation instant={true} direction="down" offset={-20}>
         <nav
-          className={`fixed rounded-full text-white z-50 transition-all duration-700 ease-in-out before:pointer-events-none ${
+          className={`fixed rounded-full w-[90vw] sm:w-[87vw] text-white z-50 transition-all duration-700 ease-in-out before:pointer-events-none ${
             scrolled
               ? "lg:w-[44rem] bg-black/10 dark:bg-white/10 top-3 backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 before:absolute before:inset-0 before:rounded-2xl lg:before:rounded-2xl before:bg-gradient-to-br before:from-white/5 before:to-transparent"
               : "lg:w-[52rem] top-6 bg-transparent"

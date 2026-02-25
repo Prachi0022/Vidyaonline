@@ -29,7 +29,7 @@ function Home() {
   }, [])
 
   return (
-    <div>       
+    <div className="bg-white dark:bg-black">       
         <HeroSection />
         <Steps />
         <AIAgent />

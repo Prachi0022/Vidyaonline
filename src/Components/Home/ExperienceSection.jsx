@@ -109,7 +109,7 @@ const ExperienceSection = () => {
   }, [experienceCards.length]);
 
   return (
-    <section className="relative  overflow-hidden h-[53vh] lg:h-[100vh] pt-14 flex flex-col items-center gap-6 py-8 md:py-12 lg:py-16" style={{ minHeight: 'auto' }}>
+    <section className="relative overflow-hidden mt-10 md:mt-16 pt-14 flex flex-col items-center gap-6 py-8 md:py-12 lg:py-16">
       <span className="flex items-center justify-center gap-1 w-56 absolute left-4 lg:left-28 top-2 lg:top-40 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-200 tracking-widest uppercase border border-blue-200 dark:border-amber-900">
                 <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
         
@@ -122,7 +122,7 @@ const ExperienceSection = () => {
       >
           <div
             ref={contentRef}
-            className="flex gap-2 sm:gap-3 lg:gap-4 lg:mt-40 w-fit px-4 sm:px-6"
+            className="flex gap-2 sm:gap-3 lg:gap-4 md:mt-20 lg:mt-40 w-fit px-4 sm:px-6"
             style={{ willChange: 'transform' }}
           >
             {/* Original Cards */}
