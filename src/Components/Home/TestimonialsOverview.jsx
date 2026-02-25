@@ -91,7 +91,7 @@ const TestimonialsOverview = () => {
               </StackCardWrapper>
               <div className="w-full lg:sticky lg:top-32 space-y-10 lg:flex-1 flex flex-col items-start lg:items-end">
                 <RevealAnimation delay={0.3}>
-                  <span className="inline-block px-4 py-2 mx-4 md:mx-0 w-[9.5rem] bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-medium rounded-full">
+                  <span className="inline-block px-4 py-2 lg:w-44 mx-4 md:mx-0 w-[9.5rem] bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-medium rounded-full">
                     Client testimonials
                   </span>
                 </RevealAnimation>

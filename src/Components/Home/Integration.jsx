@@ -17,8 +17,8 @@ const Integration = () => {
                 </RevealAnimation>
                 <div className="space-y-3">
                   <RevealAnimation delay={0.3}>
-                    <h2 className="text-3xl md:w-[50vw]  md:text-5xl lg:text-6xl text-center sm:w-screen font-bold tracking-tight text-gray-900 dark:text-white">
-                      Modern foundations that ship fast and scale
+                    <h2 className="text-3xl md:w-[50vw] uppercase md:text-5xl lg:text-6xl text-center sm:w-screen font-bold tracking-tight text-gray-900 dark:text-white">
+                      Modern foundations that ship  <span className="text-transparent uppercase bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">fast and scale</span>
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.4}>

@@ -114,11 +114,12 @@ const Steps = () => {
           {/* heading  */}
           <RevealAnimation delay={0.1}>
             
-            <h2 className="lg:top-[156px] max-w-2xl text-center text-4xl leading-14 font-semibold md:text-5xl lg:text-6xl  lg:sticky lg:text-left text-gray-900 dark:text-white">
-             <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+            <h2 className="lg:top-[156px] max-w-3xl uppercase text-center text-4xl leading-14 font-semibold md:text-5xl lg:text-6xl  lg:sticky lg:text-left text-gray-900 dark:text-white">
+             <span className="px-3 flex items-center justify-center w-40 gap-1 sm:px-4 py-1.5 sm:py-2 mb-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                 Our Services
               </span> <br />
-              Beyond Development We Deliver <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Transformation</span>
+              Beyond Development We Deliver <span className="text-transparent uppercase bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Transformation</span>
             </h2>
           </RevealAnimation>
 

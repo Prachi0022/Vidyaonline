@@ -62,19 +62,19 @@ function HeroSection() {
             <RevealAnimation direction="down" delay={0.2}>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950 rounded-full border border-blue-100 dark:border-blue-900">
                 <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
-                <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Premier IT Solutions Provider</span>
+                <span className="text-sm font-medium text-blue-700 uppercase dark:text-blue-300">Premier IT Solutions Provider</span>
               </div>
             </RevealAnimation>
 
             {/* Main Heading */}
             <RevealAnimation direction="up" delay={0.4} offset={100}>
               <div className="space-y-4">
-                <h1 className="text-4xl uppercase sm:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[0.8] text-gray-900 dark:text-white">
-                  Innovate.
+                <h1 className="text-4xl uppercase sm:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[0.9] text-gray-900 dark:text-white">
+                  Innovate
                   <br />
-                  <span className="text-blue-600">Integrate.</span>
+                  <span className="text-blue-600">Integrate</span>
                   <br />
-                  Elevate.
+                  Elevate
                 </h1>
               </div>
             </RevealAnimation>
@@ -120,11 +120,11 @@ function HeroSection() {
           </div>
 
           {/* Right Visual Elements */}
-          <RevealAnimation direction="right" delay={0.3} offset={100}>
+          {/* <RevealAnimation direction="right" delay={0.3} offset={100}>
             <div className="relative h-[39rem] hidden lg:flex items-center justify-center">
-              {/* Stats Cards */}
+              
               <div className="relative w-full max-w-lg">
-              {/* Card 1 - Main Stats */}
+              
               <div className="absolute top-0 right-0 w-72 bg-white/60 backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 dark:bg-gray-900 rounded-2xl  dark:border-gray-800 p-6">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -146,7 +146,7 @@ function HeroSection() {
                 </div>
               </div>
 
-              {/* Card 2 - Clients */}
+              
               <div className="absolute top-36 left-14 w-64 bg-blue-600/80 rounded-2xl  backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 p-6 text-white">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 bg-transparentrounded-xl flex items-center justify-center">
@@ -162,7 +162,7 @@ function HeroSection() {
                 </div>
               </div>
 
-              {/* Card 3 - Industries */}
+              
               <div className="absolute bottom-0 -right-40 w-60 bg-white/50 dark:bg-gray-900 rounded-2xl  backdrop-blur-md border border-white/20 shadow-2xl shadow-blue-500/10 dark:border-gray-800 p-5">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 dark:bg-gray-800 rounded-lg flex items-center justify-center">
@@ -186,7 +186,7 @@ function HeroSection() {
                 </div>
               </div>
             </div>
-            </RevealAnimation>
+            </RevealAnimation> */}
         </div>
 
         {/* Bottom Stats Bar */}
