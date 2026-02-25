@@ -37,7 +37,7 @@ function HeroSection() {
     <section
       id="hero-section"
       ref={sectionRef}
-      className="relative min-h-[100vh] md:min-h-screen w-full overflow-hidden pt-24 sm:pt-32 pb-12 sm:pb-20 px-4"
+      className="relative min-h-[100vh] md:min-h-[92vh] lg:min-h-screen w-full overflow-hidden pt-24 sm:pt-32 pb-12 sm:pb-20 px-4"
     >
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="h-full w-full">
@@ -69,7 +69,7 @@ function HeroSection() {
             {/* Main Heading */}
             <RevealAnimation direction="up" delay={0.4} offset={100}>
               <div className="space-y-4">
-                <h1 className="text-4xl uppercase sm:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[0.9] text-gray-900 dark:text-white">
+                <h1 className="text-4xl uppercase sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[0.9] text-gray-900 dark:text-white">
                   Innovate
                   <br />
                   <span className="text-blue-600">Integrate</span>
@@ -81,7 +81,7 @@ function HeroSection() {
 
             {/* Description */}
             <RevealAnimation direction="up" delay={0.5} offset={60}>
-              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-full sm:max-w-xl lg:max-w-lg">
+              <p className="text-base sm:text-lg md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-full sm:max-w-xl lg:max-w-lg">
                 Transform your business with cutting-edge technology solutions. We deliver enterprise-grade software, banking systems, and IT services that drive measurable results.
               </p>
             </RevealAnimation>

@@ -258,17 +258,17 @@ function CaseStudies() {
 
   return (
     <RevealAnimation>
-      <section className={`relative overflow-hidden transition-all duration-500 ease-in-out ${
+      <section className={`relative transition-all duration-500 ease-in-out ${
         isExpanded 
-          ? 'h-[80vh] sm:h-[70vh] md:h-[102vh]' 
-          : 'h-[55vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]'
+          ? 'h-[80vh] sm:h-[70vh] md:h-[130vh]' 
+          : 'h-[75vh] sm:h-[60vh] md:h-[100vh] lg:h-[100vh]'
       }`}>
-        <div className="main-container relative min-h-screen md:min-h-[120vh] lg:min-h-[130vh] py-8 sm:py-12 md:py-0 px-4 sm:px-6 md:px-20">
-        <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[640px] lg:min-h-[640px]">
+        <div className="main-container relative min-h-screen md:min-h-[85vh] lg:min-h-[120vh] py-8 sm:py-12 md:py-0 px-4 sm:px-6 md:px-10">
+        <div className="relative min-h-[400px] sm:min-h-[500px] md:min-h-[560px] lg:min-h-[640px]">
           {/* Image Section */}
           <div
             ref={imageContainerRef}
-            className="absolute w-[18rem] h-[11rem] sm:w-[22rem] sm:h-[14rem] md:w-[52rem] md:h-[17rem]"
+            className="absolute w-[18rem] h-[11rem] sm:w-[22rem] sm:h-[14rem] md:w-[42rem] md:h-[16rem]"
             style={{ left: 0, top: 0 }}
           >
             <div className="relative overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.12)]">

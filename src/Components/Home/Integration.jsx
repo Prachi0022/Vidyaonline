@@ -4,9 +4,9 @@ import IntegrationCircle from './IntegrationCircle';
 
 const Integration = () => {
   return (
-    <section className="py-[8px] md:h-[750px]  md:py-[12px] bg-gradient-to-b lg:py-[15px] xl:h-[40rem]">
+    <section className="py-[8px] md:py-[12px] bg-gradient-to-b lg:py-[15px]">
       <RevealAnimation delay={0.1}>
-        <div className="relative mx-auto h-[620px] max-w-[1600px] overflow-hidden">
+        <div className="relative mx-auto max-w-[1600px] overflow-hidden">
           <div className="main-container px-2 lg:pb-4 relative z-30">
             <div className="mt-[180px] space-y-[40px] md:mt-[200px] lg:mt-[280px]">
               <div className="space-y-1 text-center flex flex-col items-center justify-center">

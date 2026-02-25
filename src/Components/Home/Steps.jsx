@@ -107,14 +107,14 @@ const Steps = () => {
   return (
     <section
       id="steps-section"
-      className="relative z-10 py-[80px] md:py-[120px] lg:py-[156px] bg-white dark:bg-black"
+      className="relative z-10 py-[80px] md:py-[120px] lg:py-[156px] bg-white dark:bg-black md:min-h-[90vh]"
     >
-      <div className="main-container">
+      <div className="main-container px-4 md:px-10">
         <div className="flex flex-wrap items-start justify-center gap-y-[58px] lg:flex-nowrap lg:gap-x-[58px] lg:gap-y-0">
           {/* heading  */}
           <RevealAnimation delay={0.1}>
             
-            <h2 className="lg:top-[156px] max-w-3xl uppercase text-center text-4xl leading-14 font-semibold md:text-5xl lg:text-6xl  lg:sticky lg:text-left text-gray-900 dark:text-white">
+            <h2 className="md:top-[120px] lg:top-[156px] max-w-3xl uppercase text-center text-4xl leading-14 font-semibold md:text-5xl md:sticky lg:text-6xl  md:text-left text-gray-900 dark:text-white">
              <span className="px-3 flex items-center justify-center w-40 gap-1 sm:px-4 py-1.5 sm:py-2 mb-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
                 <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                 Our Services
@@ -125,12 +125,12 @@ const Steps = () => {
 
           {/* bar  */}
           <RevealAnimation delay={0.2}>
-            <div className="bg-gradient-to-b from-blue-500 to-blue-600 sticky top-[156px] hidden h-[564px] w-px lg:block" />
+            <div className="bg-gradient-to-b from-blue-500 to-blue-600 sticky md:top-[120px] lg:top-[156px] hidden md:block h-[420px] md:h-[520px] lg:h-[564px] w-px" />
           </RevealAnimation>
 
           {/* cards  */}
           <RevealAnimation delay={0.2}>
-            <div className="space-y-10 lg:space-y-18 xl:space-y-18">
+            <div className="space-y-10 md:space-y-14 lg:space-y-18 xl:space-y-18">
               {stepsData.map((step) => (
                 <StepCard
                   key={step.id}
@@ -145,7 +145,7 @@ const Steps = () => {
 
           {/* cards number  */}
           <RevealAnimation delay={0.3}>
-            <div className="top-[312px] ml-10 hidden flex-col gap-y-2 lg:sticky lg:top-[156px] lg:ml-0 lg:flex">
+            <div className="top-[312px] ml-10 hidden md:flex md:flex-row md:flex-wrap md:gap-3 md:top-[120px] md:sticky lg:top-[156px] lg:ml-0 lg:flex lg:flex-col lg:gap-y-2">
               {stepsData.map((step) => (
                 <button
                   key={step.id}
