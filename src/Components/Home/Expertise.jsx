@@ -150,7 +150,7 @@ function Expertise() {
               Technical Expertise
             </span>
             <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl leading-4 lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
                 <span className="block">Deep Technical Expertise,</span>
                 <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
                   Supporting Modern Systems
