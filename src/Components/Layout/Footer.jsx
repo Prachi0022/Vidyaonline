@@ -166,7 +166,7 @@ function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-400 text-sm">
-            Copyright © 2026 <span className="text-white font-semibold">NexMoves</span> – digital excellence delivered
+            Copyright © 2026 <span className="text-white font-semibold">Nexmoves</span> – digital excellence delivered
           </p>
           <div className="flex items-center gap-4 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>

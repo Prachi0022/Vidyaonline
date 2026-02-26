@@ -137,7 +137,7 @@ function Expertise() {
   }, [setIsDarkMode]);
 
   return (
-    <section ref={sectionRef} className="py-8 sm:py-12 md:py-[120px] lg:py-[156px] bg-transparent relative overflow-hidden transition-colors duration-700">
+    <section ref={sectionRef} className="py-8 sm:py-12 md:py-[120px] lg:py-[156px] bg-transparent relative overflow-hidden transition-colors mt-8 duration-700">
       {/* Background elements */}
       <div className="absolute top-10 sm:top-20 right-0 w-32 sm:w-64 md:w-96 h-32 sm:h-64 md:h-96 bg-blue-500/5 rounded-full blur-3xl" />
       <div className="absolute bottom-10 sm:bottom-20 left-0 w-32 sm:w-64 md:w-96 h-32 sm:h-64 md:h-96 bg-blue-500/5 rounded-full blur-3xl" />
@@ -145,15 +145,15 @@ function Expertise() {
       <div className="main-container relative z-10">
         {/* Header */}
         <RevealAnimation delay={0.1}>
-          <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16 px-4">
-            <span className="flex items-center justify-center gap-1 w-52 absolute left-1/2 -translate-x-1/2 -top-16 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+          <div className="relative text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16 px-4 pt-12 sm:pt-0">
+            <span className="flex items-center justify-center gap-1 w-52 absolute left-1/2 -translate-x-1/2 -top-8 sm:-top-16 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
                 <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
               
               Technical Expertise
             </span>
             <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl leading-4 uppercase lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
-                <span className="">Deep Technical Expertise,</span>
+              <h2 className="text-4xl sm:text-4xl md:text-5xl uppercase lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-10 sm:leading-14 lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
+                Deep Technical Expertise,
                 <span className=" text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
                   Supporting Modern Systems
                 </span>

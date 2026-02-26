@@ -100,7 +100,7 @@ function Sectors() {
                 <div className="w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
                 Industries We Serve
               </span>
-              <h2 className="text-3xl uppercase sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-5xl leading-tight">
+              <h2 className="text-4xl uppercase sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-5xl leading-10 sm:leading-14 md:leading-16">
                 Solving Complex Challenges<br />
                 Across <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">Every Major Sector</span>
               </h2>

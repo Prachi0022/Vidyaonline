@@ -114,7 +114,7 @@ const Steps = () => {
           {/* heading  */}
           <RevealAnimation delay={0.1}>
             
-            <h2 className="md:top-[120px] lg:top-[156px] font-bold max-w-3xl uppercase text-center text-4xl leading-16  md:text-5xl md:sticky lg:text-6xl  md:text-left text-gray-900 dark:text-white">
+            <h2 className="md:top-[120px] lg:top-[156px] font-bold max-w-3xl uppercase text-center text-4xl leading-10 sm:leading-14 md:leading-16  md:text-5xl md:sticky lg:text-6xl  md:text-left text-gray-900 dark:text-white">
              <span className="px-3 flex items-center justify-center w-40 gap-1 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
                 <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                 Our Services

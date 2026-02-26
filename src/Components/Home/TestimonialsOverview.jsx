@@ -57,12 +57,12 @@ const TestimonialsOverview = () => {
       <RevealAnimation delay={0.1}>
         <div className="mx-auto max-w-7xl rounded-2xl py-20 md:py-25">
           <div className="main-container">
-            <div className="flex flex-col items-start gap-y-32 md:gap-x-35 md:flex-row">
+            <div className="flex flex-col items-center md:items-start gap-y-32 md:gap-x-35 md:flex-row">
               <StackCardWrapper
                 topOffset="15vh"
                 gap="24px"
                 initDelay={100}
-                className="mx-4 md:mx-auto w-full max-w-sm md:max-w-md lg:mx-0 lg:max-w-full lg:flex-1">
+                className="mx-auto px-4 sm:px-6 w-full max-w-sm sm:max-w-md md:max-w-lg lg:mx-0 lg:max-w-full lg:flex-1">
                 {testimonialsData.map((testimonial) => (
                   <StackCardItem key={testimonial.id}>
                     <div className="flex h-full flex-col items-start space-y-6 bg-black/60 rounded-2xl backdrop-blur-md dark:bg-black/80 p-8 shadow-sm border border-white/20 hover:shadow-lg transition-shadow duration-300">
@@ -91,7 +91,7 @@ const TestimonialsOverview = () => {
               </StackCardWrapper>
               <div className="w-full lg:sticky lg:top-32 space-y-10 lg:flex-1 flex flex-col items-start lg:items-end">
                 <RevealAnimation delay={0.3}>
-                  <span className="flex items-center justify-center gap-1.5 px-4 py-2 lg:w-44 mx-4 md:mx-0 w-[9.5rem] bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-medium rounded-full">
+                  <span className="flex items-center justify-center gap-1.5 px-4 py-2 lg:w-52 mx-4 md:mx-0 w-48 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-medium rounded-full">
                 <div className="w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
                    
                     Client testimonials
@@ -99,7 +99,7 @@ const TestimonialsOverview = () => {
                 </RevealAnimation>
                 <div className="space-y-6 max-w-xl">
                   <RevealAnimation delay={0.4}>
-                    <h2 className="text-4xl uppercase md:text-5xl mx-4 text-left md:text-right lg:text-6xl font-bold text-gray-900 dark:text-white leading-16">
+                    <h2 className="text-4xl uppercase md:text-5xl mx-4 text-left md:text-right lg:text-6xl font-bold text-gray-900 dark:text-white leading-10 sm:leading-14 md:leading-16">
                       Trusted by <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">businesses worldwide.</span> 
                     </h2>
                   </RevealAnimation>

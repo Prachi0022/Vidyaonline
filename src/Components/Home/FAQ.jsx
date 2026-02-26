@@ -71,7 +71,7 @@ function FAQ() {
               Frequently Asked Questions
             </span>
             
-            <p className="uppercase text-sm sm:text-base md:text-6xl w-[68vw]  text-white font-bold tracking-tight leading-16 px-2 sm:px-0">
+            <p className="uppercase text-4xl sm:text-base md:text-6xl w-[68vw]  text-white font-bold tracking-tight leading-10 sm:leading-14 md:leading-16 px-2 sm:px-0">
               Find answers to common questions about our <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">AI and technology solutions.</span> 
             </p>
           </div>
