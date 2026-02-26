@@ -152,7 +152,7 @@ function Expertise() {
               Technical Expertise
             </span>
             <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-4xl sm:text-4xl md:text-5xl uppercase lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-10 sm:leading-14 lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
+              <h2 className="text-4xl sm:text-4xl md:text-5xl uppercase lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-10 sm:leading-14 lg:leading-14 flex flex-col items-center gap-1 sm:gap-2">
                 Deep Technical Expertise,
                 <span className=" text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
                   Supporting Modern Systems
