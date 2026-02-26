@@ -96,12 +96,13 @@ function Sectors() {
         <RevealAnimation direction="up" offset={80} duration={0.8}>
           <div className="flex flex-col md:flex-row justify-between mb-12 md:mb-24 items-start md:items-center px-4 md:px-[3vw] gap-6">
             <div className="flex flex-col gap-3">
-              <span className="inline-block w-48 lg:w-52 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-purple-50 dark:bg-purple-900/30 text-xs font-semibold text-purple-700 dark:text-purple-200 tracking-widest uppercase border border-purple-100 dark:border-purple-900">
+              <span className="flex items-center justify-center gap-1.5 w-48 lg:w-52 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-purple-50 dark:bg-purple-900/30 text-xs font-semibold text-purple-700 dark:text-purple-200 tracking-widest uppercase border border-purple-100 dark:border-purple-900">
+                <div className="w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
                 Industries We Serve
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight">
+              <h2 className="text-3xl uppercase sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-5xl leading-tight">
                 Solving Complex Challenges<br />
-                Across Every Major Sector
+                Across <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">Every Major Sector</span>
               </h2>
             </div>
             

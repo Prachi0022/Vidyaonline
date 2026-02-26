@@ -16,9 +16,9 @@ function HeroSection() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShowSpline(entry.isIntersecting)
+        setShowSpline(entry.isIntersecting && entry.intersectionRatio >= 0.35)
       },
-      { threshold: 0.1, rootMargin: '200px' }
+      { threshold: [0, 0.35, 1], rootMargin: '0px' }
     )
 
     observer.observe(node)
@@ -69,7 +69,7 @@ function HeroSection() {
             {/* Main Heading */}
             <RevealAnimation direction="up" delay={0.4} offset={100}>
               <div className="space-y-4">
-                <h1 className="text-4xl uppercase sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[0.9] text-gray-900 dark:text-white">
+                <h1 className="text-4xl uppercase sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl max-w-full sm:max-w-md lg:max-w-[25rem] font-bold leading-tight sm:leading-[0.9] lg:leading-[1] text-gray-900 dark:text-white">
                   Innovate
                   <br />
                   <span className="text-blue-600">Integrate</span>

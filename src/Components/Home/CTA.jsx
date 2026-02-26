@@ -32,7 +32,7 @@ const CTA = () => {
             {/* Content */}
             <div className="relative z-10 space-y-6 max-w-3xl">
               <RevealAnimation delay={0.1}>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-4xl md:text-5xl uppercase lg:text-6xl font-bold text-gray-900 leading-tight">
                   Built It? <br className="hidden lg:block" />
                   Now Let's Market It!
                 </h2>
