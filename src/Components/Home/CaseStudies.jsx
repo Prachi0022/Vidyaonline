@@ -300,9 +300,11 @@ function CaseStudies() {
           >
             {!isExpanded && (
               <div className="flex absolute -top-6 left-2 md:left-12  items-center justify-end gap-2 sm:gap-3 md:gap-4 text-[10px] sm:text-xs md:text-xs  tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] text-gray-500">
-<span className="inline-block uppercase px-3 w-32 lg:w-36 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest  border border-blue-100 dark:border-blue-900">
+<span className=" uppercase px-3 flex items-center justify-center gap-1  w-32 lg:w-36 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest  border border-blue-100 dark:border-blue-900">
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
+              
               My Projects
-            </span>                <span className="h-px w-12 sm:w-16 md:w-44 bg-gray-300"></span>
+            </span>               
               </div>
             )}
 

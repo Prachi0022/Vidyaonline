@@ -66,12 +66,13 @@ function FAQ() {
         {/* Header */}
         <RevealAnimation delay={0.1}>
           <div className="px-4 sm:px-6 md:px-8 lg:mx-18 text-start space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16">
-            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50/10 text-xs font-semibold text-blue-100 tracking-widest uppercase border border-blue-300/30">
+            <span className="flex items-center justify-center gap-1.5 w-72 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-purple-50 dark:bg-purple-900/30 text-xs font-semibold text-purple-700 dark:text-purple-200 tracking-widest uppercase border border-purple-100 dark:border-purple-900">
+                <div className="w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
               Frequently Asked Questions
             </span>
             
-            <p className=" text-sm sm:text-base md:text-6xl w-[68vw]  text-white font-bold tracking-tight leading-[0.9] px-2 sm:px-0">
-              Find answers to common questions about our AI and technology solutions.
+            <p className="uppercase text-sm sm:text-base md:text-6xl w-[68vw]  text-white font-bold tracking-tight leading-16 px-2 sm:px-0">
+              Find answers to common questions about our <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">AI and technology solutions.</span> 
             </p>
           </div>
         </RevealAnimation>

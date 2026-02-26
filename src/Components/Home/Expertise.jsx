@@ -146,13 +146,15 @@ function Expertise() {
         {/* Header */}
         <RevealAnimation delay={0.1}>
           <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16 px-4">
-            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+            <span className="flex items-center justify-center gap-1 w-52 absolute left-1/2 -translate-x-1/2 -top-16 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-xs font-semibold text-blue-700 dark:text-blue-300 tracking-widest uppercase border border-blue-100 dark:border-blue-900">
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
+              
               Technical Expertise
             </span>
             <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl leading-4 lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
-                <span className="block">Deep Technical Expertise,</span>
-                <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl leading-4 uppercase lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white lg:leading-16 sm:leading-snug flex flex-col items-center gap-1 sm:gap-2">
+                <span className="">Deep Technical Expertise,</span>
+                <span className=" text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-blue-600">
                   Supporting Modern Systems
                 </span>
               </h2>

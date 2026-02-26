@@ -11,13 +11,15 @@ const Integration = () => {
             <div className="mt-[180px] space-y-[40px] md:mt-[200px] lg:mt-[280px]">
               <div className="space-y-1 text-center flex flex-col items-center justify-center">
                 <RevealAnimation delay={0.2}>
-                  <span className="inline-block px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950 text-sm font-medium text-blue-700 dark:text-blue-200 border border-blue-100 dark:border-blue-900 tracking-widest uppercase">
+                  <span className="flex items-center justify-center gap-1 px-4 py-2 rounded-full mb-8 bg-blue-50 dark:bg-blue-950 text-sm font-medium text-blue-700 dark:text-blue-200 border border-blue-100 dark:border-blue-900 tracking-widest uppercase">
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
+                    
                     Our Tech Stack
                   </span>
                 </RevealAnimation>
                 <div className="space-y-3">
                   <RevealAnimation delay={0.3}>
-                    <h2 className="text-3xl md:w-[50vw] uppercase md:text-5xl lg:text-6xl text-center sm:w-screen font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="text-3xl md:w-[50vw] uppercase md:text-5xl lg:text-6xl text-center sm:w-screen leading-16 font-bold tracking-tight text-gray-900 dark:text-white">
                       Modern foundations that ship  <span className="text-transparent uppercase bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">fast and scale</span>
                     </h2>
                   </RevealAnimation>
