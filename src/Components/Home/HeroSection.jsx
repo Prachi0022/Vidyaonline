@@ -37,7 +37,7 @@ function HeroSection() {
     <section
       id="hero-section"
       ref={sectionRef}
-      className="relative min-h-[100vh] md:min-h-[92vh] lg:min-h-screen w-full overflow-hidden pt-24 sm:pt-32 pb-12 sm:pb-20 px-4"
+      className="relative isolate min-h-[80vh] md:min-h-[92vh] lg:min-h-screen w-full overflow-hidden pt-24 sm:pt-32 pb-12 sm:pb-20 px-4"
     >
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="h-full w-full">
